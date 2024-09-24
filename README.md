@@ -4,7 +4,7 @@
 
 Install with `pip install gdriver`
 
-## Client from credentials
+## Client from Credentials
 
 ```python
 import gdriver as gd
