@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gdriver"
+version = "0.1.1"
+authors = [
+  {name="Marcel Claramunt", email="marcel@moveread.com"}
+]
+description = "Actually usable Google Drive client"
+dependencies = [
+  "pydrive"
+]
+requires-python = ">=3.10"
+readme = {file="README.md", content-type="text/markdown"}
+
+[project.urls]
+repo = "https://github.com/marciclabas/gdrive.git"
+
+[project.scripts]
+gdrive-auth = "google_driver.cli:main"
+
+# [project.optional-dependencies]
+# test = [
+#   "pytest < 5.0.0",
+#   "pytest-cov[all]"
+# ]
